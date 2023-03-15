@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ProfileMenuTab">
+        <attr name="hasBalance" format="boolean" />
+        <attr name="hasArrow" format="boolean" />
+        <attr name="balance" format="string" />
+        <attr name="tabIcon" format="reference" />
+        <attr name="tabText" format="reference" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mainfragments.ProfileFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/arrow_left"
+        app:title="@string/profile"
+        app:titleCentered="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cardCornerRadius="250dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="250dp">
+
+                    <ImageView
+                        android:contentDescription="@string/profile_photo"
+                        android:id="@+id/profile_photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/profile_photo" />
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/change_photo_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/change_photo"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:fontFamily="@font/montserrat700"
+                android:text="@string/template_name"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/MaterialButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="@string/upload_item"
+                app:icon="@drawable/ic_share"
+                app:iconGravity="textStart" />
+
+            <com.example.onlineshop.customview.ProfileMenuTab
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="14dp"
+                app:hasArrow="true"
+                app:tabIcon="@drawable/ic_credit_card"
+                app:tabText="@string/trade_store" />
+
+            <com.example.onlineshop.customview.ProfileMenuTab
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="25dp"
+                app:hasArrow="true"
+                app:tabIcon="@drawable/ic_credit_card"
+                app:tabText="@string/payment_method" />
+
+            <com.example.onlineshop.customview.ProfileMenuTab
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="25dp"
+                app:balance="$1593"
+                app:hasBalance="true"
+                app:tabIcon="@drawable/ic_credit_card"
+                app:tabText="@string/balance" />
+
+            <com.example.onlineshop.customview.ProfileMenuTab
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="25dp"
+                app:hasArrow="true"
+                app:tabIcon="@drawable/ic_credit_card"
+                app:tabText="@string/trade_history" />
+
+            <com.example.onlineshop.customview.ProfileMenuTab
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="25dp"
+                app:hasArrow="true"
+                app:tabIcon="@drawable/ic_restock"
+                app:tabText="@string/restore_purchase" />
+
+            <com.example.onlineshop.customview.ProfileMenuTab
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="25dp"
+                app:tabIcon="@drawable/ic_question"
+                app:tabText="@string/help" />
+
+            <com.example.onlineshop.customview.ProfileMenuTab
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                app:tabIcon="@drawable/ic_log_out"
+                app:tabText="@string/log_out" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

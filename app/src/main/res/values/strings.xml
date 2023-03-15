@@ -1,3 +1,37 @@
 <resources>
     <string name="app_name">OnlineShop</string>
+    <string name="sign_in">Sign in</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="email">Email</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="log_in">Log in</string>
+    <string name="sing_in_with_google">Sing in with google</string>
+    <string name="sing_in_with_apple">Sing in with Apple</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="profile">Profile</string>
+    <string name="chat">Chat</string>
+    <string name="cart">Cart</string>
+    <string name="settings">Settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="favorites">Favorites</string>
+    <string name="home_page">Home page</string>
+    <string name="change_photo">Change photo</string>
+    <string name="upload_item">Upload item</string>
+    <string name="template_name">Satria Adhi Pradana</string>
+    <string name="open_tab_icon">Open tab icon</string>
+    <string name="trade_store">Trade store</string>
+    <string name="payment_method">Payment method</string>
+    <string name="balance">Balance</string>
+    <string name="trade_history">Trade history</string>
+    <string name="restore_purchase">Restore Purchase</string>
+    <string name="help">Help</string>
+    <string name="log_out">Log out</string>
+    <string name="permission_required">Permisson required</string>
+    <string name="permission_denied_dialog_message">You can set the permission in settings</string>
+    <string name="storage_permission_rationale">To select a photo, you need to give permission</string>
+    <string name="allow">Allow</string>
+    <string name="profile_photo">Profile photo</string>
 </resources>
