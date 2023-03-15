@@ -34,4 +34,13 @@
     <string name="storage_permission_rationale">To select a photo, you need to give permission</string>
     <string name="allow">Allow</string>
     <string name="profile_photo">Profile photo</string>
+    <string name="location">Location</string>
+    <string name="search_edit_text">What are you looking for?</string>
+    <string name="latest">Latest</string>
+    <string name="view_all">View all</string>
+    <string name="flash_sale">Flash Sale</string>
+    <string name="like_button">Like button</string>
+    <string name="add_button">Add button</string>
+    <string name="price">$ %1$s</string>
+    <string name="sale">%1$s%% off</string>
 </resources>
