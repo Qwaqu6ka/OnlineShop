@@ -11,6 +11,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat
 import com.example.onlineshop.BaseFragment
 import com.example.onlineshop.R
+import com.example.onlineshop.SignInActivity
 import com.example.onlineshop.databinding.FragmentProfileBinding
 
 class ProfileFragment : BaseFragment<FragmentProfileBinding>(R.layout.fragment_profile) {
@@ -35,6 +36,11 @@ class ProfileFragment : BaseFragment<FragmentProfileBinding>(R.layout.fragment_p
 
         binding.changePhotoButton.setOnClickListener {
             checkPermissionLauncher.launch(Manifest.permission.READ_EXTERNAL_STORAGE)
+        }
+
+        binding.logOutTab.setOnClickListener {
+            startActivity(Intent(context, SignInActivity::class.java))
+            activity?.finish()
         }
     }
 
